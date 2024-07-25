@@ -1,7 +1,8 @@
 import React from "react";
+import PriceComponent from "./components/PriceComponent";
 
 function App() {
-  return <div>home</div>;
+  return <PriceComponent />;
 }
 
 export default App;
