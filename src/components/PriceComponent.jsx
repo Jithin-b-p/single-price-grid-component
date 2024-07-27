@@ -11,18 +11,34 @@ const PricingSection = styled.section``;
 
 const About = styled.div``;
 
+const Title = styled.span`
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: hsl(var(--clr-primary-cyan-200));
+`;
+
+const SubTitle = styled.span`
+  font-weight: 700;
+  color: hsl(var(--clr-primary-yellow));
+`;
+
+const Description = styled.p`
+  color: hsl(var(--clr-neutral-200));
+`;
+
 function PriceComponent() {
   return (
     <Container>
       <SectionOne>
-        <h1>Join our community</h1>
+        <Title>Join our community</Title>
 
-        <h2>30-day, hassle-free money back gurantee</h2>
-        <p>
+        <SubTitle>30-day, hassle-free money back gurantee</SubTitle>
+        <Description>
           Gain access to our full library of tutorials along with expert code
           reviews. Perfect for any developers who are serious about honing their
           skills.
-        </p>
+        </Description>
       </SectionOne>
 
       <PricingSection>
