@@ -14,7 +14,13 @@ const SectionOne = styled.div`
   padding-block: 2rem;
 `;
 
-const PricingSection = styled.section``;
+const PricingSection = styled.section`
+  background-color: hsl(var(--clr-primary-cyan-200));
+`;
+
+const PriceTitle = styled.span`
+  color: hsl(var(--clr-white));
+`;
 
 const About = styled.div``;
 
@@ -38,6 +44,12 @@ const Description = styled.p`
   color: hsl(var(--clr-neutral-200));
 `;
 
+const Price = styled.span`
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(var(--clr-white));
+`;
+
 function PriceComponent() {
   return (
     <Container>
@@ -53,9 +65,9 @@ function PriceComponent() {
       </SectionOne>
 
       <PricingSection>
-        <span>Monthly Subscription</span>
+        <PriceTitle>Monthly Subscription</PriceTitle>
         <div>
-          <span>$29</span>
+          <Price>$29</Price>
           <span>per month</span>
         </div>
 
