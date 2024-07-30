@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import Button from "./common/Button";
+import PricingSection from "./PricingSection";
 
 const Container = styled.div`
   /* padding: 1rem 2rem; */
@@ -8,21 +8,19 @@ const Container = styled.div`
   overflow: hidden;
 `;
 
+const InnerContainer = styled.div`
+  display: flex;
+`;
+
 const SectionOne = styled.div`
   background-color: hsl(var(--clr-white));
   padding-inline: 2.5rem;
   padding-block: 2rem;
 `;
 
-const PricingSection = styled.section`
-  background-color: hsl(var(--clr-primary-cyan-200));
+const About = styled.div`
+  width: 50%;
 `;
-
-const PriceTitle = styled.span`
-  color: hsl(var(--clr-white));
-`;
-
-const About = styled.div``;
 
 const Title = styled.span`
   margin-bottom: 1rem;
@@ -44,12 +42,6 @@ const Description = styled.p`
   color: hsl(var(--clr-neutral-200));
 `;
 
-const Price = styled.span`
-  font-size: 2rem;
-  font-weight: 700;
-  color: hsl(var(--clr-white));
-`;
-
 function PriceComponent() {
   return (
     <Container>
@@ -64,28 +56,19 @@ function PriceComponent() {
         </Description>
       </SectionOne>
 
-      <PricingSection>
-        <PriceTitle>Monthly Subscription</PriceTitle>
-        <div>
-          <Price>$29</Price>
-          <span>per month</span>
-        </div>
-
-        <p>Full access for less than $1 a day</p>
-
-        <Button />
-      </PricingSection>
-
-      <About>
-        <span>Why us</span>
-        <span>Tutorials by industry experts</span>
-        <span>Peer & expert code review</span>
-        <span>Coding exercises</span>
-        <span>Access to our Github repos</span>
-        <span>Community forum</span>
-        <span>Flashcard decks</span>
-        <span>New videos every week</span>
-      </About>
+      <InnerContainer>
+        <PricingSection />
+        <About>
+          <span>Why us</span>
+          <span>Tutorials by industry experts</span>
+          <span>Peer & expert code review</span>
+          <span>Coding exercises</span>
+          <span>Access to our Github repos</span>
+          <span>Community forum</span>
+          <span>Flashcard decks</span>
+          <span>New videos every week</span>
+        </About>
+      </InnerContainer>
     </Container>
   );
 }

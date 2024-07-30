@@ -1,7 +1,15 @@
-import React from "react";
+import styled from "@emotion/styled";
+
+const Btn = styled.button`
+  padding: 0.5rem 2rem;
+  background-color: hsl(var(--clr-primary-yellow));
+  color: hsl(var(--clr-white));
+  border: none;
+  border-radius: 3px;
+`;
 
 function Button() {
-  return <div>Button</div>;
+  return <Btn>Sign Up</Btn>;
 }
 
 export default Button;
