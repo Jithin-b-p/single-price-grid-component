@@ -41,7 +41,7 @@ function PricingSection() {
       <PriceTitle>Monthly Subscription</PriceTitle>
       <InnerContainer>
         <Price>$29</Price>
-        <Month>per month</Month>
+        <Month>per month111</Month>
       </InnerContainer>
 
       <Paragraph>Full access for less than $1 a day</Paragraph>
