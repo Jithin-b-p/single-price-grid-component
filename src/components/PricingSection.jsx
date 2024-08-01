@@ -15,6 +15,8 @@ const Price = styled.span`
 `;
 
 const PriceTitle = styled.span`
+  font-size: 1.125rem;
+  font-weight: 700;
   color: hsl(var(--clr-white));
 `;
 
@@ -23,6 +25,7 @@ const InnerContainer = styled.div`
   align-items: center;
   gap: 1rem;
   color: white;
+  margin-block-start: 1rem;
 `;
 
 const Month = styled.span`
@@ -41,7 +44,7 @@ function PricingSection() {
       <PriceTitle>Monthly Subscription</PriceTitle>
       <InnerContainer>
         <Price>$29</Price>
-        <Month>per month111</Month>
+        <Month>per month</Month>
       </InnerContainer>
 
       <Paragraph>Full access for less than $1 a day</Paragraph>

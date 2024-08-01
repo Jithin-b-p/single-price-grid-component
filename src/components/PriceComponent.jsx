@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import PricingSection from "./PricingSection";
+import WhySection from "./WhySection";
 
 const Container = styled.div`
   /* padding: 1rem 2rem; */
@@ -16,10 +17,6 @@ const SectionOne = styled.div`
   background-color: hsl(var(--clr-white));
   padding-inline: 2.5rem;
   padding-block: 2rem;
-`;
-
-const About = styled.div`
-  width: 50%;
 `;
 
 const Title = styled.span`
@@ -58,16 +55,7 @@ function PriceComponent() {
 
       <InnerContainer>
         <PricingSection />
-        <About>
-          <span>Why us</span>
-          <span>Tutorials by industry experts</span>
-          <span>Peer & expert code review</span>
-          <span>Coding exercises</span>
-          <span>Access to our Github repos</span>
-          <span>Community forum</span>
-          <span>Flashcard decks</span>
-          <span>New videos every week</span>
-        </About>
+        <WhySection />
       </InnerContainer>
     </Container>
   );
