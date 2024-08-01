@@ -4,9 +4,17 @@ import Button from "./common/Button";
 const Container = styled.section`
   display: flex;
   flex-direction: column;
-  width: 50%;
-  padding: 2rem 2.5rem;
+
   background-color: hsl(var(--clr-primary-cyan-200));
+  padding: 1.8rem 1.5rem;
+
+  @media screen and (min-width: 40rem) {
+    padding: 2rem 2.5rem;
+  }
+
+  @media screen and (min-width: 40rem) {
+    width: 50%;
+  }
 `;
 const Price = styled.span`
   font-size: 2rem;
@@ -25,7 +33,11 @@ const InnerContainer = styled.div`
   align-items: center;
   gap: 1rem;
   color: white;
-  margin-block-start: 1rem;
+  margin-block-start: 0.7rem;
+
+  @media screen and (min-width: 40rem) {
+    margin-block-start: 1rem;
+  }
 `;
 
 const Month = styled.span`
@@ -33,9 +45,13 @@ const Month = styled.span`
 `;
 
 const Paragraph = styled.p`
-  margin-block-end: 1.2rem;
+  margin-block-end: 1.5rem;
   font-size: 1rem;
   color: hsl(var(--clr-neutral-100));
+
+  @media screen and (min-width: 40rem) {
+    margin-block-end: 1.2rem;
+  }
 `;
 
 function PricingSection() {

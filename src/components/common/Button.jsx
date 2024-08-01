@@ -8,6 +8,7 @@ const Btn = styled.button`
   color: hsl(var(--clr-white));
   border: none;
   border-radius: 3px;
+  box-shadow: 1px 0px 1rem hsl(0 0 0 / 25%);
 `;
 
 function Button() {

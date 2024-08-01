@@ -1,11 +1,18 @@
 import styled from "@emotion/styled";
 
-const WhySectionContainer = styled.div`
+const WhySectionContainer = styled.section`
   display: flex;
   flex-direction: column;
-  width: 50%;
-  padding: 2rem 2.5rem;
+  padding: 1.8rem 1.5rem;
   background-color: hsl(var(--clr-primary-cyan-300));
+
+  @media screen and (min-width: 40rem) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: 40rem) {
+    padding: 2rem 2.5rem;
+  }
 `;
 
 const Title = styled.span`
