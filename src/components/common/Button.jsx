@@ -9,6 +9,10 @@ const Btn = styled.button`
   border: none;
   border-radius: 3px;
   box-shadow: 1px 0px 1rem hsl(0 0 0 / 25%);
+
+  :hover {
+    cursor: pointer;
+  }
 `;
 
 function Button() {

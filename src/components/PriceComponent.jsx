@@ -31,7 +31,7 @@ const SectionOne = styled.div`
 `;
 
 const Title = styled.span`
-  margin-bottom: 1rem;
+  margin-block-end: 1rem;
   display: block;
   font-size: 1.1rem;
   font-weight: 700;
@@ -55,7 +55,7 @@ const SubTitle = styled.span`
 `;
 
 const Description = styled.p`
-  color: hsl(var(--clr-neutral-200));
+  color: hsl(0 0 0 / 75%);
 
   font-size: 0.825rem;
 `;
